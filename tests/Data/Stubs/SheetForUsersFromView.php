@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Urbics\Laraexcel\Tests\Data\Stubs;
 
 use Illuminate\Support\Collection;
 use Illuminate\Contracts\View\View;
-use Maatwebsite\Excel\Concerns\FromView;
-use Maatwebsite\Excel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\FromView;
+use Urbics\Laraexcel\Concerns\Exportable;
 
 class SheetForUsersFromView implements FromView
 {

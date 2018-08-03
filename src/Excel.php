@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Urbics\Laraexcel;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Filesystem\FilesystemManager;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Urbics\Laraexcel\Tests;
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
-use Maatwebsite\Excel\ExcelServiceProvider;
+use Urbics\Laraexcel\ExcelServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 class TestCase extends OrchestraTestCase

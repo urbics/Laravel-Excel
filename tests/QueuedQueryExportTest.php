@@ -1,10 +1,10 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Urbics\Laraexcel\Tests;
 
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
-use Maatwebsite\Excel\Tests\Data\Stubs\AfterQueueExportJob;
-use Maatwebsite\Excel\Tests\Data\Stubs\FromUsersQueryExport;
+use Urbics\Laraexcel\Tests\Data\Stubs\Database\User;
+use Urbics\Laraexcel\Tests\Data\Stubs\AfterQueueExportJob;
+use Urbics\Laraexcel\Tests\Data\Stubs\FromUsersQueryExport;
 
 class QueuedQueryExportTest extends TestCase
 {

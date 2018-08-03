@@ -1,9 +1,9 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Urbics\Laraexcel\Tests\Concerns;
 
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Tests\Data\Stubs\WithHeadingExport;
+use Urbics\Laraexcel\Tests\TestCase;
+use Urbics\Laraexcel\Tests\Data\Stubs\WithHeadingExport;
 
 class WithHeadingTest extends TestCase
 {

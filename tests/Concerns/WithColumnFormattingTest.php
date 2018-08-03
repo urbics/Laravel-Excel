@@ -1,16 +1,16 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Urbics\Laraexcel\Tests\Concerns;
 
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Tests\TestCase;
+use Urbics\Laraexcel\Tests\TestCase;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithMapping;
-use Maatwebsite\Excel\Concerns\FromCollection;
+use Urbics\Laraexcel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\WithMapping;
+use Urbics\Laraexcel\Concerns\FromCollection;
 use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
-use Maatwebsite\Excel\Concerns\WithColumnFormatting;
+use Urbics\Laraexcel\Concerns\WithColumnFormatting;
 
 class WithColumnFormattingTest extends TestCase
 {

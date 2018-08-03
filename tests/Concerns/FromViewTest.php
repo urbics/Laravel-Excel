@@ -1,15 +1,15 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Urbics\Laraexcel\Tests\Concerns;
 
 use Illuminate\Support\Collection;
 use Illuminate\Contracts\View\View;
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Concerns\FromView;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
-use Maatwebsite\Excel\Tests\Data\Stubs\SheetForUsersFromView;
+use Urbics\Laraexcel\Tests\TestCase;
+use Urbics\Laraexcel\Concerns\FromView;
+use Urbics\Laraexcel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\WithMultipleSheets;
+use Urbics\Laraexcel\Tests\Data\Stubs\Database\User;
+use Urbics\Laraexcel\Tests\Data\Stubs\SheetForUsersFromView;
 
 class FromViewTest extends TestCase
 {

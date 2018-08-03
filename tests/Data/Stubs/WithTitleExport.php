@@ -1,9 +1,9 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Urbics\Laraexcel\Tests\Data\Stubs;
 
-use Maatwebsite\Excel\Concerns\WithTitle;
-use Maatwebsite\Excel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\WithTitle;
+use Urbics\Laraexcel\Concerns\Exportable;
 
 class WithTitleExport implements WithTitle
 {

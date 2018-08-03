@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs\Database;
+namespace Urbics\Laraexcel\Tests\Data\Stubs\Database;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,19 +1,19 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Urbics\Laraexcel;
 
 use Traversable;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Jobs\CloseSheet;
-use Maatwebsite\Excel\Jobs\QueueExport;
-use Maatwebsite\Excel\Concerns\FromQuery;
-use Maatwebsite\Excel\Jobs\SerializedQuery;
-use Maatwebsite\Excel\Jobs\AppendDataToSheet;
-use Maatwebsite\Excel\Jobs\StoreQueuedExport;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Jobs\AppendQueryToSheet;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Concerns\WithCustomQuerySize;
+use Urbics\Laraexcel\Jobs\CloseSheet;
+use Urbics\Laraexcel\Jobs\QueueExport;
+use Urbics\Laraexcel\Concerns\FromQuery;
+use Urbics\Laraexcel\Jobs\SerializedQuery;
+use Urbics\Laraexcel\Jobs\AppendDataToSheet;
+use Urbics\Laraexcel\Jobs\StoreQueuedExport;
+use Urbics\Laraexcel\Concerns\FromCollection;
+use Urbics\Laraexcel\Jobs\AppendQueryToSheet;
+use Urbics\Laraexcel\Concerns\WithMultipleSheets;
+use Urbics\Laraexcel\Concerns\WithCustomQuerySize;
 
 class QueuedWriter
 {

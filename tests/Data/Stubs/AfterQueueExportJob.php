@@ -1,9 +1,9 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Urbics\Laraexcel\Tests\Data\Stubs;
 
 use Illuminate\Bus\Queueable;
-use Maatwebsite\Excel\Tests\TestCase;
+use Urbics\Laraexcel\Tests\TestCase;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
 class AfterQueueExportJob implements ShouldQueue

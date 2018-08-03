@@ -1,6 +1,6 @@
 <?php
 
-use Maatwebsite\Excel\Excel;
+use Urbics\Laraexcel\Excel;
 
 return [
     'exports'            => [

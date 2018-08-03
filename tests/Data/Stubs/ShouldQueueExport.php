@@ -1,10 +1,10 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Urbics\Laraexcel\Tests\Data\Stubs;
 
-use Maatwebsite\Excel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\Exportable;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
+use Urbics\Laraexcel\Concerns\WithMultipleSheets;
 
 class ShouldQueueExport implements WithMultipleSheets, ShouldQueue
 {

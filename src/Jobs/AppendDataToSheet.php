@@ -1,9 +1,9 @@
 <?php
 
-namespace Maatwebsite\Excel\Jobs;
+namespace Urbics\Laraexcel\Jobs;
 
 use Illuminate\Bus\Queueable;
-use Maatwebsite\Excel\Writer;
+use Urbics\Laraexcel\Writer;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 

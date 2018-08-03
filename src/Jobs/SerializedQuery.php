@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Jobs;
+namespace Urbics\Laraexcel\Jobs;
 
 use Illuminate\Database\Connection;
 use Illuminate\Support\Facades\Event;

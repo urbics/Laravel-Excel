@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel\Mixins;
+namespace Urbics\Laraexcel\Mixins;
 
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithHeadings;
-use Maatwebsite\Excel\Concerns\FromCollection;
+use Urbics\Laraexcel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\WithHeadings;
+use Urbics\Laraexcel\Concerns\FromCollection;
 
 class StoreCollection
 {

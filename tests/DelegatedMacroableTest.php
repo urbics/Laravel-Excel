@@ -1,15 +1,15 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Urbics\Laraexcel\Tests;
 
-use Maatwebsite\Excel\Sheet;
-use Maatwebsite\Excel\Writer;
-use Maatwebsite\Excel\Events\BeforeSheet;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Events\BeforeExport;
+use Urbics\Laraexcel\Sheet;
+use Urbics\Laraexcel\Writer;
+use Urbics\Laraexcel\Events\BeforeSheet;
+use Urbics\Laraexcel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\WithEvents;
+use Urbics\Laraexcel\Events\BeforeExport;
 use PhpOffice\PhpSpreadsheet\Document\Properties;
-use Maatwebsite\Excel\Concerns\RegistersEventListeners;
+use Urbics\Laraexcel\Concerns\RegistersEventListeners;
 
 class DelegatedMacroableTest extends TestCase
 {

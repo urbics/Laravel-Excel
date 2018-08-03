@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel\Concerns;
+namespace Urbics\Laraexcel\Concerns;
 
-use Maatwebsite\Excel\Events\AfterSheet;
-use Maatwebsite\Excel\Events\BeforeSheet;
-use Maatwebsite\Excel\Events\BeforeExport;
-use Maatwebsite\Excel\Events\BeforeWriting;
+use Urbics\Laraexcel\Events\AfterSheet;
+use Urbics\Laraexcel\Events\BeforeSheet;
+use Urbics\Laraexcel\Events\BeforeExport;
+use Urbics\Laraexcel\Events\BeforeWriting;
 
 trait RegistersEventListeners
 {

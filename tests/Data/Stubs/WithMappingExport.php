@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Urbics\Laraexcel\Tests\Data\Stubs;
 
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithMapping;
-use Maatwebsite\Excel\Concerns\FromCollection;
+use Urbics\Laraexcel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\WithMapping;
+use Urbics\Laraexcel\Concerns\FromCollection;
 
 class WithMappingExport implements FromCollection, WithMapping
 {

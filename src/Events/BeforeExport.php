@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Events;
+namespace Urbics\Laraexcel\Events;
 
-use Maatwebsite\Excel\Writer;
+use Urbics\Laraexcel\Writer;
 
 class BeforeExport
 {

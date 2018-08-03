@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Urbics\Laraexcel\Tests\Concerns;
 
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\Group;
-use Maatwebsite\Excel\Tests\Data\Stubs\AfterQueueExportJob;
-use Maatwebsite\Excel\Tests\Data\Stubs\FromQueryWithCustomQuerySize;
+use Urbics\Laraexcel\Tests\TestCase;
+use Urbics\Laraexcel\Tests\Data\Stubs\Database\User;
+use Urbics\Laraexcel\Tests\Data\Stubs\Database\Group;
+use Urbics\Laraexcel\Tests\Data\Stubs\AfterQueueExportJob;
+use Urbics\Laraexcel\Tests\Data\Stubs\FromQueryWithCustomQuerySize;
 
 class WithCustomQuerySizeTest extends TestCase
 {

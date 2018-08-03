@@ -1,17 +1,17 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Urbics\Laraexcel\Tests\Concerns;
 
-use Maatwebsite\Excel\Sheet;
-use Maatwebsite\Excel\Writer;
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Events\AfterSheet;
-use Maatwebsite\Excel\Events\BeforeSheet;
-use Maatwebsite\Excel\Events\BeforeExport;
-use Maatwebsite\Excel\Events\BeforeWriting;
-use Maatwebsite\Excel\Tests\Data\Stubs\ExportWithEvents;
+use Urbics\Laraexcel\Sheet;
+use Urbics\Laraexcel\Writer;
+use Urbics\Laraexcel\Tests\TestCase;
+use Urbics\Laraexcel\Events\AfterSheet;
+use Urbics\Laraexcel\Events\BeforeSheet;
+use Urbics\Laraexcel\Events\BeforeExport;
+use Urbics\Laraexcel\Events\BeforeWriting;
+use Urbics\Laraexcel\Tests\Data\Stubs\ExportWithEvents;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
-use Maatwebsite\Excel\Tests\Data\Stubs\BeforeExportListener;
+use Urbics\Laraexcel\Tests\Data\Stubs\BeforeExportListener;
 
 class WithEventsTest extends TestCase
 {

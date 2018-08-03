@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel\Jobs;
+namespace Urbics\Laraexcel\Jobs;
 
-use Maatwebsite\Excel\Writer;
+use Urbics\Laraexcel\Writer;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
+use Urbics\Laraexcel\Concerns\WithMultipleSheets;
 
 class QueueExport implements ShouldQueue
 {

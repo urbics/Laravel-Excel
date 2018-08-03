@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Urbics\Laraexcel\Tests;
 
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Fakes\ExcelFake;
+use Urbics\Laraexcel\Fakes\ExcelFake;
 use Illuminate\Foundation\Bus\PendingDispatch;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Facades\Excel as ExcelFacade;
+use Urbics\Laraexcel\Concerns\FromCollection;
+use Urbics\Laraexcel\Facades\Excel as ExcelFacade;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 class ExcelFakeTest extends TestCase

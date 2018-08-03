@@ -1,10 +1,10 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Mixins;
+namespace Urbics\Laraexcel\Tests\Mixins;
 
-use Maatwebsite\Excel\Excel;
+use Urbics\Laraexcel\Excel;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Tests\TestCase;
+use Urbics\Laraexcel\Tests\TestCase;
 
 class StoreCollectionTest extends TestCase
 {

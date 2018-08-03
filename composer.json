@@ -1,5 +1,5 @@
 {
-  "name": "maatwebsite/excel",
+  "name": "urbics/laraexcel",
   "description": "An eloquent way of importing and exporting Excel and CSV",
   "license": "MIT",
   "keywords": [
@@ -31,21 +31,21 @@
   },
   "autoload": {
     "psr-4": {
-      "Maatwebsite\\Excel\\": "src/"
+      "Urbics\\Laraexcel\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Maatwebsite\\Excel\\Tests\\": "tests/"
+      "Urbics\\Laraexcel\\Tests\\": "tests/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Maatwebsite\\Excel\\ExcelServiceProvider"
+        "Urbics\\Laraexcel\\ExcelServiceProvider"
       ],
       "aliases": {
-        "Excel": "Maatwebsite\\Excel\\Facades\\Excel"
+        "Excel": "Urbics\\Laraexcel\\Facades\\Excel"
       }
     }
   }

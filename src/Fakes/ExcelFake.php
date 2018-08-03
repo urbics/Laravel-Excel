@@ -1,10 +1,10 @@
 <?php
 
-namespace Maatwebsite\Excel\Fakes;
+namespace Urbics\Laraexcel\Fakes;
 
 use Illuminate\Bus\Queueable;
 use PHPUnit\Framework\Assert;
-use Maatwebsite\Excel\Exporter;
+use Urbics\Laraexcel\Exporter;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Foundation\Bus\PendingDispatch;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;

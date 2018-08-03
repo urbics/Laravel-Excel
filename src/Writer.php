@@ -1,15 +1,15 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Urbics\Laraexcel;
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 use PhpOffice\PhpSpreadsheet\Writer\Csv;
-use Maatwebsite\Excel\Concerns\WithTitle;
+use Urbics\Laraexcel\Concerns\WithTitle;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Events\BeforeExport;
-use Maatwebsite\Excel\Events\BeforeWriting;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
+use Urbics\Laraexcel\Concerns\WithEvents;
+use Urbics\Laraexcel\Events\BeforeExport;
+use Urbics\Laraexcel\Events\BeforeWriting;
+use Urbics\Laraexcel\Concerns\WithMultipleSheets;
 
 class Writer
 {
@@ -89,6 +89,7 @@ class Writer
      */
     public function export($export, string $writerType): string
     {
+        $this->export = $export;
         $this->open($export);
 
         $sheetExports = [$export];
@@ -267,5 +268,10 @@ class Writer
     public function getSheetByIndex(int $sheetIndex)
     {
         return new Sheet($this->getDelegate()->getSheet($sheetIndex));
+    }
+
+    public function getExportObject()
+    {
+        return $this->export;
     }
 }

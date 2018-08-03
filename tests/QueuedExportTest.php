@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Urbics\Laraexcel\Tests;
 
-use Maatwebsite\Excel\Tests\Data\Stubs\QueuedExport;
-use Maatwebsite\Excel\Tests\Data\Stubs\ShouldQueueExport;
-use Maatwebsite\Excel\Tests\Data\Stubs\AfterQueueExportJob;
-use Maatwebsite\Excel\Tests\Data\Stubs\EloquentCollectionWithMappingExport;
+use Urbics\Laraexcel\Tests\Data\Stubs\QueuedExport;
+use Urbics\Laraexcel\Tests\Data\Stubs\ShouldQueueExport;
+use Urbics\Laraexcel\Tests\Data\Stubs\AfterQueueExportJob;
+use Urbics\Laraexcel\Tests\Data\Stubs\EloquentCollectionWithMappingExport;
 
 class QueuedExportTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Urbics\Laraexcel;
 
 use Illuminate\Support\Traits\Macroable;
 

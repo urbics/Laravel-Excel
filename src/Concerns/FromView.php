@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Concerns;
+namespace Urbics\Laraexcel\Concerns;
 
 use Illuminate\Contracts\View\View;
 

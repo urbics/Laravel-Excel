@@ -1,15 +1,15 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Urbics\Laraexcel\Tests\Data\Stubs;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Query\Builder;
-use Maatwebsite\Excel\Concerns\FromQuery;
-use Maatwebsite\Excel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\FromQuery;
+use Urbics\Laraexcel\Concerns\Exportable;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Maatwebsite\Excel\Concerns\WithMapping;
-use Maatwebsite\Excel\Concerns\WithCustomQuerySize;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\Group;
+use Urbics\Laraexcel\Concerns\WithMapping;
+use Urbics\Laraexcel\Concerns\WithCustomQuerySize;
+use Urbics\Laraexcel\Tests\Data\Stubs\Database\Group;
 
 class FromQueryWithCustomQuerySize implements FromQuery, WithCustomQuerySize, WithMapping, ShouldQueue
 {

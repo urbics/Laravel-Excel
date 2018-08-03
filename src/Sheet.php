@@ -1,24 +1,25 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Urbics\Laraexcel;
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
-use Maatwebsite\Excel\Concerns\FromView;
-use Maatwebsite\Excel\Events\AfterSheet;
-use Maatwebsite\Excel\Concerns\FromQuery;
-use Maatwebsite\Excel\Concerns\WithTitle;
-use Maatwebsite\Excel\Events\BeforeSheet;
+use Urbics\Laraexcel\Concerns\FromView;
+use Urbics\Laraexcel\Events\AfterSheet;
+use Urbics\Laraexcel\Concerns\FromQuery;
+use Urbics\Laraexcel\Concerns\WithTitle;
+use Urbics\Laraexcel\Events\BeforeSheet;
 use PhpOffice\PhpSpreadsheet\Reader\Html;
-use Maatwebsite\Excel\Concerns\WithEvents;
+use Urbics\Laraexcel\Concerns\WithEvents;
 use Illuminate\Contracts\Support\Arrayable;
-use Maatwebsite\Excel\Concerns\WithMapping;
-use Maatwebsite\Excel\Concerns\WithHeadings;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Concerns\ShouldAutoSize;
+use Urbics\Laraexcel\Concerns\WithMapping;
+use Urbics\Laraexcel\Concerns\WithHeadings;
+use Urbics\Laraexcel\Concerns\FromCollection;
+use Urbics\Laraexcel\Concerns\ShouldAutoSize;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
-use Maatwebsite\Excel\Concerns\WithColumnFormatting;
-use Maatwebsite\Excel\Concerns\WithStrictNullComparison;
-use Maatwebsite\Excel\Exceptions\ConcernConflictException;
+use Urbics\Laraexcel\Concerns\WithRowStyling;
+use Urbics\Laraexcel\Concerns\WithColumnFormatting;
+use Urbics\Laraexcel\Concerns\WithStrictNullComparison;
+use Urbics\Laraexcel\Exceptions\ConcernConflictException;
 
 class Sheet
 {
@@ -110,6 +111,12 @@ class Sheet
         if ($sheetExport instanceof WithColumnFormatting) {
             foreach ($sheetExport->columnFormats() as $column => $format) {
                 $this->formatColumn($column, $format);
+            }
+        }
+
+        if ($sheetExport instanceof WithRowStyling) {
+            foreach ($sheetExport->rowStyles() as $row => $style) {
+                $this->styleRow($row, $style);
             }
         }
 
@@ -207,6 +214,19 @@ class Sheet
             ->getStyle($column . '1:' . $column . $this->worksheet->getHighestRow())
             ->getNumberFormat()
             ->setFormatCode($format);
+    }
+
+    /**
+     * @param string $row
+     * @param string $style
+     *
+     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     */
+    public function styleRow(string $row, array $style)
+    {
+        $this->worksheet
+            ->getStyle('A' . $row . ':' . $this->worksheet->getHighestDataColumn($row) . $row)
+            ->applyFromArray($style);
     }
 
     /**

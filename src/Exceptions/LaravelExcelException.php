@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Exceptions;
+namespace Urbics\Laraexcel\Exceptions;
 
 use Throwable;
 

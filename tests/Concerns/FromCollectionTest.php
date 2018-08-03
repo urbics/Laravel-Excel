@@ -1,13 +1,13 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Urbics\Laraexcel\Tests\Concerns;
 
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Tests\Data\Stubs\QueuedExport;
-use Maatwebsite\Excel\Tests\Data\Stubs\SheetWith100Rows;
+use Urbics\Laraexcel\Tests\TestCase;
+use Urbics\Laraexcel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\FromCollection;
+use Urbics\Laraexcel\Tests\Data\Stubs\QueuedExport;
+use Urbics\Laraexcel\Tests\Data\Stubs\SheetWith100Rows;
 
 class FromCollectionTest extends TestCase
 {

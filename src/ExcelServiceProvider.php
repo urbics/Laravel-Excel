@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Urbics\Laraexcel;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
-use Maatwebsite\Excel\Mixins\StoreCollection;
-use Maatwebsite\Excel\Mixins\DownloadCollection;
+use Urbics\Laraexcel\Mixins\StoreCollection;
+use Urbics\Laraexcel\Mixins\DownloadCollection;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Laravel\Lumen\Application as LumenApplication;
 

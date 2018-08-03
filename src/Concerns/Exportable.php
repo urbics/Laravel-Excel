@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel\Concerns;
+namespace Urbics\Laraexcel\Concerns;
 
-use Maatwebsite\Excel\Excel;
+use Urbics\Laraexcel\Excel;
 use Illuminate\Foundation\Bus\PendingDispatch;
-use Maatwebsite\Excel\Exceptions\NoFilenameGivenException;
-use Maatwebsite\Excel\Exceptions\NoFilePathGivenException;
+use Urbics\Laraexcel\Exceptions\NoFilenameGivenException;
+use Urbics\Laraexcel\Exceptions\NoFilePathGivenException;
 
 trait Exportable
 {

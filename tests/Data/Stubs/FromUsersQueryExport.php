@@ -1,14 +1,14 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Urbics\Laraexcel\Tests\Data\Stubs;
 
 use Illuminate\Database\Query\Builder;
-use Maatwebsite\Excel\Concerns\FromQuery;
-use Maatwebsite\Excel\Events\BeforeSheet;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Concerns\WithMapping;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
+use Urbics\Laraexcel\Concerns\FromQuery;
+use Urbics\Laraexcel\Events\BeforeSheet;
+use Urbics\Laraexcel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\WithEvents;
+use Urbics\Laraexcel\Concerns\WithMapping;
+use Urbics\Laraexcel\Tests\Data\Stubs\Database\User;
 
 class FromUsersQueryExport implements FromQuery, WithMapping, WithEvents
 {

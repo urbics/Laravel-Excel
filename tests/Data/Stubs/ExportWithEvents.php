@@ -1,13 +1,13 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Urbics\Laraexcel\Tests\Data\Stubs;
 
-use Maatwebsite\Excel\Events\AfterSheet;
-use Maatwebsite\Excel\Events\BeforeSheet;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Events\BeforeExport;
-use Maatwebsite\Excel\Events\BeforeWriting;
+use Urbics\Laraexcel\Events\AfterSheet;
+use Urbics\Laraexcel\Events\BeforeSheet;
+use Urbics\Laraexcel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\WithEvents;
+use Urbics\Laraexcel\Events\BeforeExport;
+use Urbics\Laraexcel\Events\BeforeWriting;
 
 class ExportWithEvents implements WithEvents
 {

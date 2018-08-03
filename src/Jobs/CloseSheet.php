@@ -1,10 +1,10 @@
 <?php
 
-namespace Maatwebsite\Excel\Jobs;
+namespace Urbics\Laraexcel\Jobs;
 
 use Illuminate\Bus\Queueable;
-use Maatwebsite\Excel\Writer;
-use Maatwebsite\Excel\Concerns\WithEvents;
+use Urbics\Laraexcel\Writer;
+use Urbics\Laraexcel\Concerns\WithEvents;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
 class CloseSheet implements ShouldQueue

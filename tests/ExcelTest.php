@@ -1,18 +1,18 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Urbics\Laraexcel\Tests;
 
-use Maatwebsite\Excel\Excel;
+use Urbics\Laraexcel\Excel;
 use Illuminate\Support\Collection;
 use Illuminate\Contracts\View\View;
-use Maatwebsite\Excel\Concerns\FromView;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Events\BeforeWriting;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Facades\Excel as ExcelFacade;
-use Maatwebsite\Excel\Tests\Data\Stubs\EmptyExport;
-use Maatwebsite\Excel\Concerns\RegistersEventListeners;
+use Urbics\Laraexcel\Concerns\FromView;
+use Urbics\Laraexcel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\WithEvents;
+use Urbics\Laraexcel\Events\BeforeWriting;
+use Urbics\Laraexcel\Concerns\FromCollection;
+use Urbics\Laraexcel\Facades\Excel as ExcelFacade;
+use Urbics\Laraexcel\Tests\Data\Stubs\EmptyExport;
+use Urbics\Laraexcel\Concerns\RegistersEventListeners;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 class ExcelTest extends TestCase
@@ -137,7 +137,7 @@ class ExcelTest extends TestCase
 
     /**
      * @test
-     * @expectedException \Maatwebsite\Excel\Exceptions\ConcernConflictException
+     * @expectedException \Urbics\Laraexcel\Exceptions\ConcernConflictException
      * @expectedExceptionMessage Cannot use FromQuery or FromCollection and FromView on the same sheet
      */
     public function cannot_use_from_collection_and_from_view_on_same_export()

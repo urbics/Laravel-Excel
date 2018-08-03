@@ -2,10 +2,10 @@
 
 namespace Urbics\Laraexcel\Concerns;
 
-interface WithColumnFormatting
+interface WithRowStyling
 {
     /**
      * @return array
      */
-    public function columnFormats(): array;
+    public function rowStyles(): array;
 }

@@ -1,7 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\Group;
+use Urbics\Laraexcel\Tests\Data\Stubs\Database\Group;
 
 /*
 |--------------------------------------------------------------------------

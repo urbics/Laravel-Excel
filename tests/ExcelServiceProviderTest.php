@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Urbics\Laraexcel\Tests;
 
-use Maatwebsite\Excel\Excel;
+use Urbics\Laraexcel\Excel;
 
 class ExcelServiceProviderTest extends TestCase
 {

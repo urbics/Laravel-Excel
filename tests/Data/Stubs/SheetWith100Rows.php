@@ -1,17 +1,17 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Urbics\Laraexcel\Tests\Data\Stubs;
 
-use Maatwebsite\Excel\Writer;
+use Urbics\Laraexcel\Writer;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Concerns\WithTitle;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Events\BeforeWriting;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Concerns\ShouldAutoSize;
-use Maatwebsite\Excel\Concerns\RegistersEventListeners;
+use Urbics\Laraexcel\Tests\TestCase;
+use Urbics\Laraexcel\Concerns\WithTitle;
+use Urbics\Laraexcel\Concerns\Exportable;
+use Urbics\Laraexcel\Concerns\WithEvents;
+use Urbics\Laraexcel\Events\BeforeWriting;
+use Urbics\Laraexcel\Concerns\FromCollection;
+use Urbics\Laraexcel\Concerns\ShouldAutoSize;
+use Urbics\Laraexcel\Concerns\RegistersEventListeners;
 
 class SheetWith100Rows implements FromCollection, WithTitle, ShouldAutoSize, WithEvents
 {
