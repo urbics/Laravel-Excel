@@ -18,6 +18,7 @@ use Urbics\Laraexcel\Concerns\ShouldAutoSize;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 use Urbics\Laraexcel\Concerns\WithRowStyling;
 use Urbics\Laraexcel\Concerns\WithColumnFormatting;
+use Urbics\Laraexcel\Concerns\WithColumnSizing;
 use Urbics\Laraexcel\Concerns\WithStrictNullComparison;
 use Urbics\Laraexcel\Exceptions\ConcernConflictException;
 
@@ -120,6 +121,12 @@ class Sheet
             }
         }
 
+        if ($sheetExport instanceof WithColumnSizing) {
+            foreach ($sheetExport->columnWidths() as $column => $width) {
+                $this->sizeColumn($column, $width);
+            }
+        }
+
         if ($sheetExport instanceof ShouldAutoSize) {
             $this->autoSize();
         }
@@ -217,6 +224,19 @@ class Sheet
     }
 
     /**
+     * @param string $column
+     * @param string $format
+     *
+     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     */
+    public function sizeColumn(string $column, float $width)
+    {
+        $this->worksheet
+            ->getColumnDimension($column)
+            ->setWidth($width);
+    }
+
+    /**
      * @param string $row
      * @param string $style
      *
@@ -225,7 +245,7 @@ class Sheet
     public function styleRow(string $row, array $style)
     {
         $this->worksheet
-            ->getStyle('A' . $row . ':' . $this->worksheet->getHighestDataColumn($row) . $row)
+            ->getStyle('A' . $row . ':' . $this->worksheet->getHighestDataColumn() . $row)
             ->applyFromArray($style);
     }
 
