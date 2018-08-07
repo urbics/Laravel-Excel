@@ -2,10 +2,10 @@
 
 namespace Urbics\Laraexcel\Concerns;
 
-interface WithRowStyling
+interface WithRangeStyling
 {
     /**
      * @return array
      */
-    public function rowStyles(): array;
+    public function rangeStyles(): array;
 }

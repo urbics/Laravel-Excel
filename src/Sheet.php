@@ -16,7 +16,7 @@ use Urbics\Laraexcel\Concerns\WithHeadings;
 use Urbics\Laraexcel\Concerns\FromCollection;
 use Urbics\Laraexcel\Concerns\ShouldAutoSize;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
-use Urbics\Laraexcel\Concerns\WithRowStyling;
+use Urbics\Laraexcel\Concerns\WithRangeStyling;
 use Urbics\Laraexcel\Concerns\WithColumnFormatting;
 use Urbics\Laraexcel\Concerns\WithColumnSizing;
 use Urbics\Laraexcel\Concerns\WithStrictNullComparison;
@@ -115,9 +115,9 @@ class Sheet
             }
         }
 
-        if ($sheetExport instanceof WithRowStyling) {
-            foreach ($sheetExport->rowStyles() as $row => $style) {
-                $this->styleRow($row, $style);
+        if ($sheetExport instanceof WithRangeStyling) {
+            foreach ($sheetExport->rangeStyles() as $range => $style) {
+                $this->styleRange($range, $style);
             }
         }
 
@@ -237,19 +237,21 @@ class Sheet
     }
 
     /**
-     * @param string $row
+     * @param string $range
      * @param string $style
      *
      * @throws \PhpOffice\PhpSpreadsheet\Exception
      */
-    public function styleRow(string $row, array $style)
+    public function styleRange(string $range, array $style)
     {
-        $cellRange = 'A' . $row . ':' . $this->worksheet->getHighestDataColumn() . $row;
-        if ( !empty($style['mergeCells'])) {
-            $this->worksheet->mergeCells($cellRange);
+        if (empty($range)) {
+            return;
+        }
+        if (!empty($style['mergeCells'])) {
+            $this->worksheet->mergeCells($range);
         }
         $this->worksheet
-            ->getStyle($cellRange)
+            ->getStyle($range)
             ->applyFromArray($style);
     }
 
