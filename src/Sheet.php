@@ -244,8 +244,12 @@ class Sheet
      */
     public function styleRow(string $row, array $style)
     {
+        $cellRange = 'A' . $row . ':' . $this->worksheet->getHighestDataColumn() . $row;
+        if ( !empty($style['mergeCells'])) {
+            $this->worksheet->mergeCells($cellRange);
+        }
         $this->worksheet
-            ->getStyle('A' . $row . ':' . $this->worksheet->getHighestDataColumn() . $row)
+            ->getStyle($cellRange)
             ->applyFromArray($style);
     }
 
