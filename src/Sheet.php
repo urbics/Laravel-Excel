@@ -250,6 +250,11 @@ class Sheet
         if (!empty($style['mergeCells'])) {
             $this->worksheet->mergeCells($range);
         }
+        if (!empty($style['repeatHeader'])) {
+            $bounds = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::rangeBoundaries($range);            
+            $this->worksheet->getPageSetup()->setRowsToRepeatAtTopByStartAndEnd(1, $bounds[1][1]);
+        }
+
         $this->worksheet
             ->getStyle($range)
             ->applyFromArray($style);
